@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+        
+    <div data-modal="modal" class="modals">
+
+        <div class="modal-content">
+            <div>
+                <input type="button" value="&times;" data-modal="exit" class="exit-modal-btn">
+            </div>
+            <div id="heading" data-modal="heading"></div>
+            <label>Game title: <input type="text" data-modal='title' value=""></label>
+            <label>Image url: <input type="text" data-modal='url' value=""></label>
+            <label>Game description: <textarea cols="46" rows="15" data-modal="description"></textarea></label>
+
+            <div class="modal-trigger-container"><input type="button" data-modal="trigger" value=""></div>
+        </div>
+
+    </div>
+    
+    <div class="add-regen-container">
+
+        <label class="regenerate-label"><input type="button" id="regenerate-btn" value="&#8634;" onclick="regenerate()"> Regenerate Games</label>
+
+        <label class="add-game-label"><input type="button" id="add-game-btn" value="+" onclick="addGame()"> Add game</label>
+
+    </div>
+        
+
+    <div class="games-container" data-games-container>
+        
+    </div>
+
+</body>
+</html>
